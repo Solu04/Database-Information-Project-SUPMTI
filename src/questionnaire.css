@@ -1,0 +1,124 @@
+.btn-input {
+  padding: 1rem 2.75rem;
+  border: 1px solid #000000;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.q-question {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.qst-btn {
+  padding: 1rem 2.75rem;
+  /* border: 1px solid #000000; */
+  background-color: #d8d8d8;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+}
+
+.qst-btn.white {
+  background-color: white;
+  color: black;
+}
+
+.next-step-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #d8d8d8;
+}
+
+.questionnaire-container {
+  width: 95%;
+  background-color: #f8f8f8;
+  margin: auto;
+}
+
+.questionnaire-container-inner {
+  width: 90%;
+  margin: auto;
+}
+
+.step1-hide-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+  transition: all 1000ms ease;
+}
+
+.step1-item-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 1rem;
+}
+.checkbox {
+  width: 17px;
+  height: 17px;
+}
+
+.choice-text {
+  font-size: 1.125rem;
+}
+
+.final-submit-btn-wrapper {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  /* display: none; */
+}
+
+.final-submit-btn {
+  padding: 1rem 2.75rem;
+  /* border: 1px solid #000000; */
+  background-color: #ff8485;
+  /* border-radius: 100px; */
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.select {
+  width: 100%;
+  font-size: 1rem;
+  /* font-weight: 500; */
+  padding: 1rem;
+  border-radius: 7px;
+  border: 1px solid #ff8485;
+}
+
+.checkbox-btn-wrapper {
+  margin-top: 4rem;
+  padding-top: 2rem;
+}
+
+.input-box-wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+.input-box {
+  padding: 1.5rem;
+  border: 1px solid #f5e9e6;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

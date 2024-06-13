@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yallah Africa - Experience Morocco Flawlessly</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="questionnaire.css" />
+    <script
+      src="https://kit.fontawesome.com/b00537a7be.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="grid grid-cols-3 top-info normal z-50">
+          <div class="flex items-center">
+            <i class="fa-solid fa-globe"></i>
+            <div class="text-sm ml-2 uppercase font-semibold">en (uk)</div>
+          </div>
+
+          <div class="flex items-center justify-center">
+            <div class="flex">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="ml-3 text-sm">98% Client Satisfaction Rating</div>
+          </div>
+
+          <div class="flex justify-end items-center font-semibold">
+            <div class="text-xs ml-2 uppercase">TALK TO OUR EXPERTS</div>
+            <div class="ml-4 flex items-center">
+              <i class="fa-solid fa-phone mr-2"></i>
+              <a class="text-xs" href="">+212 77 177 5797</a>
+            </div>
+          </div>
+        </div>
+
+        <nav class="padding-global z-50 navbar normal">
+          <div class="flex items-center justify-between py-3">
+            <div class="logo-wrapper">
+              <a href="index.html">
+                <img src="images/logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="flex items-center">
+              <div class="menu-nav flex justify-between mr-6">
+                <a class="nav-link p-4" href="">
+                  <i class="fa-solid fa-magnifying-glass white-icon"></i>
+                </a>
+                <a class="nav-link p-4" href="">
+                  <i class="fa-regular fa-heart white-icon"></i>
+                </a>
+                <a class="nav-link p-4" href="">
+                  <i class="fa-regular fa-user white-icon"></i>
+                </a>
+              </div>
+              <a class="primary-btn" href="">Get Started</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="trip">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="text-center">
+                <div class="highlight-text mb-2">Let us inspire you.</div>
+                <div class="mt-4">
+                  <h1>Trip planner</h1>
+                </div>
+                <div class="p-wrapper">
+                  <p>
+                    Your tailormade YallahAfrica adventure starts here. Tell us
+                    your outline travel plans and we'll recommend some sample
+                    trip ideas.
+                  </p>
+                </div>
+                <div class="mt-12">
+                  <div class="grid grid-cols-3 trip-top-grid gap-child-1-rem">
+                    <div class="trip-top-item">
+                      <div class="flex gap-4 items-center gap-child-1-rem">
+                        <i class="fa-solid fa-check trip-top-icon"></i>
+                        <div>
+                          <p>Luxury travel specialists</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="trip-top-item">
+                      <div class="flex items-center gap-child-2-rem">
+                        <i class="fa-solid fa-check trip-top-icon"></i>
+                        <div>
+                          <p>Bespoke itineraries</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="trip-top-item">
+                      <div class="flex items-center gap-child-1-rem">
+                        <i class="fa-solid fa-check trip-top-icon"></i>
+                        <div>
+                          <p>100% financial protection</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="main-questionnaire mt-16">
+                  <div class="questionnaire-container">
+                    <div class="padding-section-medium">
+                      <div class="questionnaire-container-inner">
+                        <form
+                          class="vacationForm"
+                          action="process.php"
+                          method="post"
+                        >
+                          <div class="step" id="step1">
+                            <label for="knowDestination" class="q-question"
+                              >Do you know where you want to travel?</label
+                            ><br />
+                            <div class="input-wrapper">
+                              <div class="btn-input">
+                                <input
+                                  type="radio"
+                                  name="knowDestination"
+                                  value="yes"
+                                  id="yes"
+                                />
+                                Yes
+                              </div>
+                              <div class="btn-input">
+                                <input
+                                  type="radio"
+                                  name="knowDestination"
+                                  value="no"
+                                  id="no"
+                                />
+                                No
+                              </div>
+                            </div>
+                            <div id="step1Hide"></div>
+                            <div class="next-step-btn-wrapper">
+                              <button id="nextStep1" class="qst-btn" disabled>
+                                Next Step
+                              </button>
+                            </div>
+                          </div>
+
+                          <div class="step" id="step2">
+                            <div>
+                              <label for="travelType" class="q-question"
+                                >Who is traveling?</label
+                              ><br />
+                              <div class="mt-8">
+                                <select
+                                  class="select"
+                                  name="travelType"
+                                  id="travelType"
+                                >
+                                  <option value="">Select an option</option>
+                                  <option value="families">Families</option>
+                                  <option value="honeymooners">
+                                    Honeymooners
+                                  </option>
+                                  <option value="couples_friends">
+                                    Couples & Friends
+                                  </option>
+                                  <option value="adventure_seekers">
+                                    Adventure Seekers
+                                  </option>
+                                  <option value="solo_travellers">
+                                    Solo Travellers
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="checkbox-btn-wrapper">
+                              <label for="experience" class="q-question"
+                                >What would you like to experience?</label
+                              ><br />
+                              <div class="input-box-wrapper mt-8">
+                                <div class="input-box">
+                                  <input
+                                    type="checkbox"
+                                    name="experience[]"
+                                    value="deserts"
+                                  />
+                                  Deserts
+                                </div>
+                                <div class="input-box">
+                                  <input
+                                    type="checkbox"
+                                    name="experience[]"
+                                    value="deserts_beach"
+                                  />
+                                  Deserts & Beach
+                                </div>
+                                <div class="input-box">
+                                  <input
+                                    type="checkbox"
+                                    name="experience[]"
+                                    value="mountains"
+                                  />
+
+                                  Mountains
+                                </div>
+
+                                <div class="input-box">
+                                  <input
+                                    type="checkbox"
+                                    name="experience[]"
+                                    value="natural_wonders"
+                                  />
+                                  Natural Wonders
+                                </div>
+                                <div class="input-box">
+                                  <input
+                                    type="checkbox"
+                                    name="experience[]"
+                                    value="self_explore"
+                                  />
+                                  Self-Explore
+                                </div>
+                                <div class="input-box">
+                                  <input
+                                    type="checkbox"
+                                    name="experience[]"
+                                    value="culture"
+                                  />
+                                  Culture
+                                </div>
+                                <div class="input-box">
+                                  <input
+                                    type="checkbox"
+                                    name="experience[]"
+                                    value="museums_landscapes"
+                                  />
+                                  Museums & Landscapes
+                                </div>
+                                <div class="input-box">
+                                  <input
+                                    type="checkbox"
+                                    name="experience[]"
+                                    value="beach"
+                                  />
+                                  Beach
+                                </div>
+                              </div>
+                            </div>
+                            <div class="next-step-btn-wrapper">
+                              <button id="prevStep1" class="qst-btn white">
+                                Previous Step
+                              </button>
+                              <button id="nextStep2" class="qst-btn" disabled>
+                                Next Step
+                              </button>
+                            </div>
+                          </div>
+
+                          <div class="step" id="step3">
+                            <label for="knowBudget" class="q-question"
+                              >ROUGHLY, WHAT IS YOUR BUDGET PER PERSON?</label
+                            ><br />
+                            <div class="input-wrapper">
+                              <div class="btn-input">
+                                <input
+                                  type="radio"
+                                  name="knowBudget"
+                                  value="less"
+                                  id="less"
+                                />
+                                Less than MAD 50,000
+                              </div>
+                              <div class="btn-input">
+                                <input
+                                  type="radio"
+                                  name="knowBudget"
+                                  value="more"
+                                  id="more"
+                                />
+                                More than MAD 50,000
+                              </div>
+
+                              <div class="btn-input">
+                                <input
+                                  type="radio"
+                                  name="knowBudget"
+                                  value="not"
+                                  id="not"
+                                />
+                                Not sure yet
+                              </div>
+                            </div>
+
+                            <div class="next-step-btn-wrapper">
+                              <button id="prevStep2" class="qst-btn white">
+                                Previous Step
+                              </button>
+
+                              <button
+                                id="viewTrip"
+                                class="final-submit-btn"
+                                type="submit"
+                                value="Submit"
+                              >
+                                View Trip Ideas
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

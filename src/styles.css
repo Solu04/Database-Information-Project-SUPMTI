@@ -1,0 +1,282 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merienda:wght@300..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.hero-parent {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.logo-wrapper {
+  max-width: 170px;
+}
+
+.bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  /* position: absolute;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; 16:9 aspect ratio */
+}
+
+.navbar {
+  background-color: #87adc0;
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+}
+.navbar.normal {
+  position: relative;
+  top: 0px;
+}
+
+.top-info {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: #964233;
+  color: white;
+  padding: 0rem 4rem;
+}
+
+.top-info.normal {
+  position: relative;
+}
+.padding-global {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.padding-section-large {
+  padding: 7rem 0rem;
+}
+
+.container-large {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 90%;
+}
+
+.fa-regular,
+.fa-solid {
+  font-size: 1.5rem;
+}
+
+.white-icon {
+  color: white;
+}
+.white-icon:hover {
+  color: #c96250;
+}
+.fa-star,
+.fa-globe,
+.fa-phone {
+  font-size: 0.75rem;
+}
+.fa-star,
+.fa-phone {
+  color: #ffd700;
+}
+
+.primary-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+  background-color: #ff8485;
+  color: white;
+}
+
+.primary-btn.bg {
+  text-transform: uppercase;
+  padding: 1rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1;
+  height: 100vh;
+  opacity: 40%;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 2.5rem;
+}
+
+/* .max-width-small {
+  width: 55rem;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.secondary-bg {
+  background-color: #6b281c;
+}
+
+.highlight-text {
+  font-size: 2.5rem;
+  color: #c96250;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+.text-primary,
+.text-color-secondary {
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.text-color-secondary {
+  color: #e5e5e5;
+}
+
+.benefit-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #964233;
+}
+.benefit-item {
+  padding: 0px 15px;
+}
+
+.text-color-black {
+  color: #000000;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.05rem;
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.destination-item {
+  position: relative;
+  min-height: 24rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.destination-item-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.destination-grid {
+  gap: 2rem;
+}
+
+.destination-name-wrapper {
+  position: absolute;
+  bottom: 3rem;
+  z-index: 5;
+  color: #ffffff;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#benefits {
+  color: white;
+}
+
+.p-wrapper {
+  margin-top: 1.5rem;
+}
+
+.trip-top-item {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 1rem 0px;
+}
+.trip-top-icon {
+  font-size: 1.25rem;
+  color: #ff8485;
+}
+
+.gap-child-1-rem {
+  /* display: flex; */
+  gap: 1rem;
+}
+.gap-child-2-rem {
+  /* display: flex; */
+  gap: 2rem;
+}
+.gap-child-4-rem {
+  /* display: flex; */
+  gap: 4rem;
+}
+.gap-child-12px {
+  gap: 12px;
+}
+
+.padding-section-medium {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.below-qst {
+  position: relative;
+  padding: 2.5rem 0px;
+}
+
+.overlay-qst {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  z-index: 2;
+  opacity: 2%;
+}
